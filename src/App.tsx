@@ -29,7 +29,7 @@ import {
 import { motion, AnimatePresence } from 'motion/react';
 import ReactMarkdown from 'react-markdown';
 import { cn } from './lib/utils';
-import { analyzeContent } from './services/geminiService';
+import { analyzeContent } from './services/aiService';
 import { AnalysisResult, ContentType } from './types';
 
 import Antigravity from './Antigravity';
