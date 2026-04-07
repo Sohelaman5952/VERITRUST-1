@@ -34,7 +34,7 @@ import { AnalysisResult, ContentType } from './types';
 
 import Antigravity from './Antigravity';
 
-type ModalType = 'how-it-works' | 'api' | 'resources' | 'about' | 'login' | null;
+type ModalType = 'how-it-works' | 'resources' | 'about' | 'login' | null;
 
 export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -236,22 +236,6 @@ export default function App() {
           }
         ]
       },
-      'api': {
-        title: 'Developer API',
-        icon: Code,
-        sections: [
-          {
-            title: 'Seamless Integration',
-            text: 'Integrate VeriTrust into your CMS or social platform with our RESTful API. Support for batch processing and real-time streaming analysis.',
-            icon: Database
-          },
-          {
-            title: 'Endpoint Example',
-            text: 'POST /api/v1/analyze\nContent-Type: application/json\n\n{ "type": "text", "content": "The moon is made of blue cheese." }',
-            icon: Code
-          }
-        ]
-      },
       'resources': {
         title: 'Integrity Resources',
         icon: BookOpen,
@@ -444,7 +428,6 @@ export default function App() {
             <div className="flex items-center gap-4 md:gap-8">
               <div className="hidden md:flex items-center gap-8 text-sm font-medium opacity-80">
                 <button onClick={() => setActiveModal('how-it-works')} className="hover:text-sky-600 transition-colors">How it works</button>
-                <button onClick={() => setActiveModal('api')} className="hover:text-sky-600 transition-colors">API</button>
                 <button onClick={() => setActiveModal('resources')} className="hover:text-sky-600 transition-colors">Resources</button>
               </div>
               
@@ -741,7 +724,6 @@ export default function App() {
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-8 text-sm font-medium opacity-70">
             <button onClick={() => setActiveModal('login')} className="hover:text-sky-600 transition-colors">Login</button>
             <button onClick={() => setActiveModal('how-it-works')} className="hover:text-sky-600 transition-colors">How it works</button>
-            <button onClick={() => setActiveModal('api')} className="hover:text-sky-600 transition-colors">API</button>
             <button onClick={() => setActiveModal('resources')} className="hover:text-sky-600 transition-colors">Resources</button>
             <button onClick={() => setActiveModal('about')} className="hover:text-sky-600 transition-colors">About</button>
           </div>
