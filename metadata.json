@@ -1,0 +1,8 @@
+{
+  "name": "VeriTrust: AI Content Guardian",
+  "description": "A comprehensive AI-powered system to detect fake news, deepfakes, and misinformation using advanced multimodal analysis.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
